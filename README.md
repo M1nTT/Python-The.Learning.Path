@@ -3,3 +3,4 @@ From 「Learn Python 3 the Hard Way」
 
 * Based on Python 3.11.2
 
+cd Documents/Python-The.Learning.path/Exercises/
