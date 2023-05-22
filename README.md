@@ -1,7 +1,7 @@
 # Python-The.Learning.Path
 From 「Learn Python 3 the Hard Way」
 
-* Based on Python 3.11.2, [Download (MacOS)](https://www.python.org/downloads/release/python-3112/)
+* Based on Python 3.11.2, [Download](https://www.python.org/downloads/release/python-3112/)
 
 ### Terminal execution code
 
