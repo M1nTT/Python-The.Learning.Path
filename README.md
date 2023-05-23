@@ -8,3 +8,9 @@ From 「Learn Python 3 the Hard Way」
 `cd Documents/Python-The.Learning.Path/Exercises/`
 
 `python3.11 ex1.py`
+
+### 「pydoc」 view instructions
+
+`python3.11 -m pydoc input` 
+
+* Enter 「q」 to exit
