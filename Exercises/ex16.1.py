@@ -13,7 +13,6 @@ print(txt1.read())
 
 txt1.close()
 
-
 print("Let's enter the file name again：")
 filename2 = input("> ")
 txt2 = open(filename2)
