@@ -5,7 +5,6 @@ from sys import argv
 
 script, filename = argv
 
-
 txt1 = open(filename)
 
 print(f"Here's your file {filename}")
