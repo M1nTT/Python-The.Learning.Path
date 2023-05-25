@@ -9,15 +9,15 @@ script, filename = argv
 txt1 = open(filename)
 
 print(f"Here's your file {filename}")
-	print(txt1.read())
+print(txt1.read())
 
-	txt1.close()
+txt1.close()
 
 
 print("Let's enter the file name again：")
-	filename2 = input("> ")
-	txt2 = open(filename2)
+filename2 = input("> ")
+txt2 = open(filename2)
 
-		print(txt2.read())
+print(txt2.read())
 
-	txt2.close()
+txt2.close()
