@@ -5,7 +5,7 @@ From 「Learn Python 3 the Hard Way」
 
 ### Terminal execution code
 
-`cd Documents/Python-The.Learning.Path/Exercises/`
+`cd Documents/git-repos/Python-The.Learning.Path/Exercises/`
 
 `python3.11 ex1.py`
 
