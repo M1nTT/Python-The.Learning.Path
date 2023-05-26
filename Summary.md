@@ -14,10 +14,10 @@ DeepL was used in the translation.
 ****
 
 ## I. Function
-### `round()`
+#### round()
 Floating point rounding
 
-#### `.format()`
+#### .format()
 Specify the "unspecified" part of the string
 
 ```python
@@ -43,7 +43,7 @@ print(formatter.format(
 ))
 ```
 
-#### `input()`
+#### input()
 Let the code executor enter a string
 
 The prompt can be represented by a variable, provided that you first define what that variable is. 
@@ -55,24 +55,24 @@ prompt = '> '
 y = input(promt) 
 ```
 
-#### `int()`
+#### int()
 Convert values to integers
 
-#### `open()`
+#### open()
 Takes a parameter and returns a value. You can assign this value to a variable. 
 This is the process of opening a file.
 
-#### `close()`
+#### close()
 Close open files
 
 ```python
 txt_again.close()
 ```
 
-#### `read()`
+#### read()
 txt.read() -> Read the contents of a txt file
 
-#### `len()`
+#### len()
 Returns the length of the string as a numeric value
 
 ```python
@@ -81,7 +81,7 @@ indata = in_file.read()
 print(f"The input file is {len(indata)} bytes long")
 ```
 
-#### `exists()`
+#### exists()
 Can tell you if the file exists. True / False
 
 
@@ -98,16 +98,16 @@ Used when you want to add variables to a string.
 print(f"Let's talk about {my_name}.")
 ```
 
-#### `"." * 10`
+#### "." * 10
 ```shell
 ..........
 ```
 
 
-#### `end=' '`
+#### end=' '
 Tell Python not to end one line with a line break and run to the next
 
-### `\n`
+#### \n
 Line break, all subsequent code will be executed on the next line
 
 ```python
@@ -125,7 +125,7 @@ Even 4 line if we want, or 5, or 6.
 """)
 ```
 
-#### `x = int(input())`
+#### x = int(input())
 Convert the input value to an integer
 
 #### from sys import argv
