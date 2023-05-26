@@ -11,7 +11,6 @@ DeepL was used in the translation.
 
 
 
-****
 
 ## I. Function
 #### round()
@@ -88,8 +87,6 @@ Can tell you if the file exists. True / False
 
 
 
-****
-
 ## II. Grammar
 #### Format sting
 Used when you want to add variables to a string.
@@ -135,7 +132,6 @@ The script calls the argv module from the sys library, parameters to be entered 
 
 
 
-****
 
 ## III. Other
 #### Single / Double quotation marks
@@ -152,7 +148,7 @@ or just use (""") to enclose the content without paraphrasing.
 
 #### Query command documentation - `pydoc`
 
-```python
+```shell
 python3.11 -m pydoc input
 ```
 
