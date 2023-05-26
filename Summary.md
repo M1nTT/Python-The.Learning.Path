@@ -1,4 +1,4 @@
-# Summarization
+# Summary
 
 Summarize the contents of the learning process
 
@@ -175,7 +175,7 @@ Both single and double quotes can be used when creating strings, but generally s
 If you need to use quotes in a string, it is better to use single quotes for the outer part and double quotes for the content.
 
 
-### Single- and double-quote transliteration 
+### Single and Double quote transliteration 
 
 "I am 6'2\" tall."    # Translate the "single quotes" in the string: '2\"
 
