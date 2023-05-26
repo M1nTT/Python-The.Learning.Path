@@ -1,5 +1,4 @@
 # Summary
-
 Summarize the contents of the learning process.
 
 Easy to look up when I forget.
@@ -10,19 +9,15 @@ DeepL was used in the translation.
 
 
 
+
+
 ****
 
 ## I. Function
-
-
-
-### [  round()  ]
-
+### `round()`
 Floating point rounding
 
-
-### [  .format()  ]
-
+#### `.format()`
 Specify the "unspecified" part of the string
 
 ```python
@@ -48,9 +43,7 @@ print(formatter.format(
 ))
 ```
 
-
-### [  input()  ]
-
+#### `input()`
 Let the code executor enter a string
 
 The prompt can be represented by a variable, provided that you first define what that variable is. 
@@ -62,34 +55,24 @@ prompt = '> '
 y = input(promt) 
 ```
 
-
-### [  int()  ]
-
+#### `int()`
 Convert values to integers
 
-
-### [  open()  ]
-
+#### `open()`
 Takes a parameter and returns a value. You can assign this value to a variable. 
 This is the process of opening a file.
 
-
-### [  close()  ]
-
+#### `close()`
 Close open files
 
 ```python
 txt_again.close()
 ```
 
-
-### [  read()  ]
-
+#### `read()`
 txt.read() -> Read the contents of a txt file
 
-
-### [  len()  ]
-
+#### `len()`
 Returns the length of the string as a numeric value
 
 ```python
@@ -98,48 +81,40 @@ indata = in_file.read()
 print(f"The input file is {len(indata)} bytes long")
 ```
 
-
-### [  exists()  ]
-
+#### `exists()`
 Can tell you if the file exists. True / False
+
+
 
 
 
 ****
 
 ## II. Grammar
-
-
-
-### [  Format sting  ]
-
--> Used when you want to add variables to a string.
+#### Format sting
+Used when you want to add variables to a string.
 
 ```python
 print(f"Let's talk about {my_name}.")
 ```
 
-
-### [  "." * 10  ]
-
--> ..........
-
-
-### [  end=' '  ]
-
--> Tell Python not to end one line with a line break and run to the next
+#### `"." * 10`
+```shell
+..........
+```
 
 
-### [  \n  ]
+#### `end=' '`
+Tell Python not to end one line with a line break and run to the next
 
--> Line break, all subsequent code will be executed on the next line
+### `\n`
+Line break, all subsequent code will be executed on the next line
 
 ```python
 months = "Jan\nFeb\nMar\nApr\nMay\nJun\nAug"
 ```
 
-
-### [  Very long strings  ]
+#### Very long strings
 
 ```python
 print("""
@@ -150,56 +125,40 @@ Even 4 line if we want, or 5, or 6.
 """)
 ```
 
+#### `x = int(input())`
+Convert the input value to an integer
 
-### [  x = int(input())  ] 
+#### from sys import argv
+The script calls the argv module from the sys library, parameters to be entered when enabling the script
 
--> Convert the input value to an integer
 
-
-### [  from sys import argv  ]
-
--> The script calls the argv module from the sys library, parameters to be entered when enabling the script
 
 
 
 ****
 
 ## III. Other
-
-
-
-### Single / Double quotation marks
-
+#### Single / Double quotation marks
 Both single and double quotes can be used when creating strings, but generally single quotes are used to create short strings. 
 
 If you need to use quotes in a string, it is better to use single quotes for the outer part and double quotes for the content.
 
-
-### Single and Double quote transliteration 
-
+#### Single and Double quote transliteration 
 "I am 6'2\" tall."    # Translate the "single quotes" in the string: '2\"
 
 "I am 6\'2" tall."    # Translate the "double quotes" in the string: \'2"
 
 or just use (""") to enclose the content without paraphrasing.
 
+#### Query command documentation - `pydoc`
 
-### Query command documentation - `pydoc`
-
-Query input command
 ```python
 python3.11 -m pydoc input
 ```
 
-
-### What is the difference between argv and input?
-
+#### What is the difference between argv and input?
 The difference is in the timing of the user input. 
 
 If the argument is to be entered when the user executes the command, then argv is used.
 
 if the user is required to enter it during the script run, then input() is used.
-
-
-
-
