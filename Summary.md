@@ -1,12 +1,12 @@
 # Summary
 
-Summarize the contents of the learning process
+Summarize the contents of the learning process.
 
-Easy to look up when I forget
+Easy to look up when I forget.
 
-Written in English to learn English
+I'm learning English, so this is written in English.
 
-DeepL was used in the translation
+DeepL was used in the translation.
 
 
 
