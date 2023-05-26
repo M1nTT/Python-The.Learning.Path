@@ -12,7 +12,7 @@ DeepL was used in the translation.
 
 ****
 
-## Function
+## I. Function
 
 
 
@@ -107,7 +107,7 @@ Can tell you if the file exists. True / False
 
 ****
 
-## Grammar
+## II. Grammar
 
 
 
@@ -164,7 +164,7 @@ Even 4 line if we want, or 5, or 6.
 
 ****
 
-## Other
+## III. Other
 
 
 
