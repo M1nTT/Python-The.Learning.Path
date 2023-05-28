@@ -1,5 +1,5 @@
 # From ex19.2.py
-# Calculating definite integrals
+# Calculating Indefinite integral
 
 from sympy import symbols, integrate
 
