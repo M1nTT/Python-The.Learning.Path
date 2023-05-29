@@ -11,8 +11,7 @@ def main(language_file):
 
 def print_line(line): 
     raw_bytes = line.encode()
-    cooked_string = raw_bytes.decode()
-
-    print(raw_bytes, "<===>", cooked_string)
+    
+    print(raw_bytes, "<===>", line)
 
 main(open("languages.txt"))
