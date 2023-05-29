@@ -5,13 +5,10 @@
 def main(language_file):
     line = language_file.readline()
     if line:
-        print_line(line)
+        raw_bytes = line.encode()
+        print(raw_bytes, "<===>", line)
+
         return main(language_file)
 
-
-def print_line(line): 
-    raw_bytes = line.encode()
-    
-    print(raw_bytes, "<===>", line)
 
 main(open("languages.txt"))
