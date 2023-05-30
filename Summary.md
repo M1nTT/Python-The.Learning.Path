@@ -83,6 +83,24 @@ print(f"The input file is {len(indata)} bytes long")
 #### exists()
 Can tell you if the file exists. True / False
 
+#### strip()
+A function for removing whitespace characters (including spaces, tabs, newlines, etc.) from the beginning and end of a string. If there are no arguments, whitespace is removed by default.
+
+#### encode()
+Encode a string
+
+#### decode()
+Decoding a byte string
+
+#### split(' ')
+Slices the string by specifying the separator (' '), which defaults to all null characters, including spaces, line feeds (\n), tabs (\t), etc.
+
+#### pop() 
+Removes an element from the list (the last element by default) and returns the value of that element. 0: the first 1: the second 2: the third -1: the last
+
+#### sorted()
+Sort the elements in the sequence, the default is ascending. A new list will be generated, without changing the original list.
+
 
 
 
