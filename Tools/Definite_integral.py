@@ -1,5 +1,5 @@
 # From ex19.2.py
-# Calculating Indefinite integral
+# Calculating Definite integral
 
 from sympy import symbols, integrate
 
@@ -12,7 +12,7 @@ def Integral(function, upper_limit, lower_limit):
     result = integrate(f, (x, a, b))
     print(f"Result = {result}")
 
-print("This is a python script for calculating indefinite integrals")
+print("This is a python script for calculating Definite integral")
 print("Please enter the function: ")
 function = input("> ")
 
