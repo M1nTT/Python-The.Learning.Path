@@ -1,5 +1,7 @@
-# ex43.1.py
-# 为难度大的房间添加通过的秘籍，我用一行代码两个词就能做出来
+# ex43.2.py
+# 回到我的描述和分析的部分，为英雄和哥顿人创建一个简单的格斗系统
+# Line:71
+
 
 from sys import exit
 from random import randint
@@ -60,50 +62,32 @@ class Centralcorridor(Scene):
             teeth, and evil clown costume flowing around his hate
             filled body. He's blocking the door to the Armory and
             about to pull a waapon to blast you.
+
+            You will fight. The rules are as follows: 
+            You and Gothon say a word (stone or scissors or cloth) at the same time,
+            stone wins scissors, scissors wins cloth, cloth wins stone, and if it's the same, start over.
             """))
 
-        action = input("shoot! or dodge or tell a joke> ")
+        # Combat system
+        letter = {1: "stone", 2: "scissors", 3: "cloth"}
+        Gothon = letter[randint(1,3)]
+        print(f"Cheat Tips: Gothon is {Gothon}")
 
-        if action == "shoot!":
+        action = input("stone、scissors or cloth?> ")
+
+        while action == Gothon:
+            print("\n> same, start over")
+            print(f"Cheat Tips: Gothon is {Gothon}")
+            action = input("stone、scissors or cloth?> ")
+
+        if action == "stone" and Gothon == "scissors" or action == "scissors" and Gothon == "cloth" or action == "cloth" and Gothon == "stone":
             print(dedent("""
-                Quick on the draw you yank out your blaster and fire
-                it at the Gothon. His clown costume is flowing and
-                moiving around his body, which throws off your aim.
-                Your laser hits his costume but misses him entirely.
-                This completely ruins his brand new costume his mother
-                bought him, which makes him fly into an insane rage
-                and blast you repeatedly in the face until you are
-                dead. Then he eats you.
-                """))
-            return 'death'
-        
-        elif action == "dodge!":
-            print(dedent("""
-                Like a world class boxer you dodge, weave, slip and
-                slide right as the Gothon's blaster cranks a laser
-                past your head. In the middle of your artful dodge
-                your foot slips and you bang your head on the metal
-                wall and pass out. You wake up shortly after only to 
-                die as the Gothon stomps on your head and eats you.
-                """))
-            return 'death'
-        
-        elif action == "tell a joke":
-            print(dedent("""
-                Lucky for you they made you learn Gothon insults in 
-                the academy. You tell the one Gothon joke you konw:
-                Lbhe zbgure vf fb sng, jura fur fvgf nebhaq gur ubhfr,
-                fur fvgf nebhaq gur ubhfr. The Gothon stops, tries
-                not to laugh, then busts out laughing and can't move.
-                While he's laughing you run up and shoot him square in
-                the head putting him down, then jump through the 
-                Weapon Armory door.
+                Gothon dies and you enter the laser_weapon_armory
                 """))
             return 'laser_weapon_armory'
-        
+
         else:
-            print("DOES NOT COMPUTE!")
-            return 'central_corridor'
+            return 'death'
 
 
 class LaserWeaponArmory(Scene):
@@ -256,6 +240,4 @@ class Map(object):
         return self.next_scene(self.start_scene)
 
 
-a_map = Map('central_corridor')
-a_game = Engine(a_map)
-a_game.play()
+Engine(Map('central_corridor')).play()
