@@ -14,3 +14,7 @@ From 「Learn Python 3 the Hard Way」
 `python3.11 -m pydoc input` 
 
 * Enter 「q」 to exit
+
+### Style Guide for Python Code
+
+https://peps.python.org/pep-0008/
